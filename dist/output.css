@@ -1839,6 +1839,24 @@ select {
   width: 23ch;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-min {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -2064,6 +2082,10 @@ select {
   font-family: Proxima Nova;
 }
 
+.font-\[mono\] {
+  font-family: mono;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2081,6 +2103,14 @@ select {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .leading-3 {
@@ -2240,6 +2270,10 @@ select {
 @media (min-width: 640px) {
   .sm\:w-\[5\%\] {
     width: 5%;
+  }
+
+  .sm\:w-\[50\%\] {
+    width: 50%;
   }
 }
 
