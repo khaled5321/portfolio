@@ -1768,6 +1768,11 @@ select {
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mr-0 {
   margin-right: 0px;
 }
@@ -1782,6 +1787,12 @@ select {
 
 .flex {
   display: flex;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .min-h-screen {
@@ -1800,6 +1811,34 @@ select {
   width: 8%;
 }
 
+.w-\[30ch\] {
+  width: 30ch;
+}
+
+.w-\[20ch\] {
+  width: 20ch;
+}
+
+.w-\[25ch\] {
+  width: 25ch;
+}
+
+.w-\[27ch\] {
+  width: 27ch;
+}
+
+.w-\[28ch\] {
+  width: 28ch;
+}
+
+.w-\[24ch\] {
+  width: 24ch;
+}
+
+.w-\[23ch\] {
+  width: 23ch;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1814,6 +1853,28 @@ select {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-x-hidden {
@@ -1861,6 +1922,14 @@ select {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
 .from-\[\#aaaaaa\] {
   --tw-gradient-from: #aaaaaa;
   --tw-gradient-to: rgb(170 170 170 / 0);
@@ -1870,6 +1939,18 @@ select {
 .from-\[\#d4d4d4\] {
   --tw-gradient-from: #d4d4d4;
   --tw-gradient-to: rgb(212 212 212 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#808080\] {
+  --tw-gradient-from: #808080;
+  --tw-gradient-to: rgb(128 128 128 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#555555\] {
+  --tw-gradient-from: #555555;
+  --tw-gradient-to: rgb(85 85 85 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1890,6 +1971,18 @@ select {
   --tw-gradient-to: #808080;
 }
 
+.to-\[\#555555\] {
+  --tw-gradient-to: #555555;
+}
+
+.to-\[\#000000\] {
+  --tw-gradient-to: #000000;
+}
+
+.to-\[\#2a2a2a\] {
+  --tw-gradient-to: #2a2a2a;
+}
+
 .fill-slate-600 {
   fill: #475569;
 }
@@ -1902,6 +1995,18 @@ select {
   padding: 0.75rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1912,8 +2017,39 @@ select {
   padding-right: 0.75rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -1928,8 +2064,39 @@ select {
   font-family: Proxima Nova;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-\[3rem\] {
+  line-height: 3rem;
 }
 
 .text-white {
@@ -2023,6 +2190,20 @@ select {
   transition-duration: 150ms;
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .hover\:bg-slate-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -2054,4 +2235,16 @@ select {
 
 .hover\:fill-\[\#6fda44\]:hover {
   fill: #6fda44;
+}
+
+@media (min-width: 640px) {
+  .sm\:w-\[5\%\] {
+    width: 5%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-full {
+    width: 100%;
+  }
 }
