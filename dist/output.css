@@ -1542,6 +1542,54 @@ select {
   margin-bottom: 0;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-\[20px\] {
+  bottom: 20px;
+}
+
+.bottom-\[50vw\] {
+  bottom: 50vw;
+}
+
+.bottom-\[-50vw\] {
+  bottom: -50vw;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[25\%\] {
+  top: 25%;
+}
+
+.right-\[-5px\] {
+  right: -5px;
+}
+
+.right-\[-10px\] {
+  right: -10px;
+}
+
+.right-\[-30px\] {
+  right: -30px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1567,12 +1615,44 @@ select {
   margin-right: 0.5rem;
 }
 
+.mb-\[-20px\] {
+  margin-bottom: -20px;
+}
+
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
+
+.mb-\[240px\] {
+  margin-bottom: 240px;
+}
+
+.mb-\[60px\] {
+  margin-bottom: 60px;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-\[20ch\] {
@@ -1591,8 +1671,70 @@ select {
   width: 8%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-\[25ch\] {
+  width: 25ch;
+}
+
+.w-\[22ch\] {
+  width: 22ch;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
 .max-w-sm {
   max-width: 24rem;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
 }
 
 .flex-col {
@@ -1629,6 +1771,10 @@ select {
 
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .overflow-hidden {
@@ -1946,11 +2092,27 @@ select {
   .sm\:w-\[5\%\] {
     width: 5%;
   }
+
+  .sm\:w-\[30ch\] {
+    width: 30ch;
+  }
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[30ch\] {
+    width: 30ch;
   }
 
   .md\:max-w-md {
@@ -1961,11 +2123,23 @@ select {
     flex-direction: row;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:justify-end {
     justify-content: flex-end;
   }
 
   .md\:justify-around {
     justify-content: space-around;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
