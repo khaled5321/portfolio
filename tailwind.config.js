@@ -7,16 +7,13 @@ module.exports = {
       },
       fontFamily: {
         'custom': ['Proxima Nova'],
-        'cursive': ['cursive']
+        'cursive': ['cursive'],
+        'hero': ['herofont', 'Proxima Nova']
       },
     },
-  },
-  corePlugins: {
-    aspectRatio: false,
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
   ],
 }
