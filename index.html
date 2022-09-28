@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +7,25 @@
     <link href="./dist/output.css" rel="stylesheet">
     <title>Khaled Emad</title>
 </head>
-<body class="overflow-x-hidden bg-gradient-to-r from-[#d4d4d4] to-[#aaaaaa] font-mono">
-    <header>
+<body class="overflow-x-hidden font-mono">
+    <header class="bg-[#f2f2f2]">
         <nav class="container flex p-5 pb-0 mx-auto items-center">
             <h1 class="prose font-cursive font-semibold text-[black]">khaled Emad</h1>
             <div class="mr-0 ml-auto">
-                <a href="#" class="prose text-[#555555] mr-4">Contact Me</a>
-                <a href="#Projects" class="prose text-[#555555]">Projects</a>
+                <a id="contactme_link" href="#ContactMe" class="prose text-[#1d1d1d] mr-4">Contact Me</a>
+                <a id="projects_link" href="#Projects" class="prose text-[#1d1d1d]">Projects</a>
             </div>
         </nav>
     </header>
     
     <main>
-        <section id="hero">
+        <section id="hero" class="relative bg-[#f2f2f2]">
             <div class="container  px-5 py-20 mx-auto flex flex-col md:flex-row items-center">
                 <div id="hero-info" class="flex flex-col justify-center items-center gap-10 md:items-start">
                     <h2 class="prose text-3xl text-[#2a2a2a]">Hi, My Name is</h2>
                     <h1 class="prose text-5xl font-hero text-[#665687] font-semibold">Khaled Emad</h1>
 
-                    <p class="prose text-center md:text-left text-[#2a2a2a] text-3xl w-[20ch] leading-[3rem] sm:w-[30ch]">
+                    <p class="prose text-center md:text-left text-[#2a2a2a] text-3xl w-[20ch] leading-[3rem] sm:w-[26ch] lg:w-[30ch]">
                         I'm a Software Engineer and Web Developer
                     </p>
 
@@ -58,51 +58,52 @@
                 </div>
 
                 <img src="./img/hero-img.png" alt="" class="hidden md:block absolute w-[45%] right-[-30px] mb-[60px] h-auto">
-               
             </div>
         </section>
 
-        <section id='Projects' class="bg-gradient-to-r  from-[#aaaaaa]  to-[#555555]">
-            <div class="container py-16 mx-auto flex flex-col items-center gap-3">
-                <h2 class="prose text-black opacity-80 border-b-2 border-opacity-100 rounded shadow-bot px-2 shadow-[white]">
+        <section id='Projects' class="bg-[#aaaaaa]">
+            <div class="container py-14 mx-auto flex flex-col items-center gap-3">
+                <h2 class="prose text-white text-3xl font-semibold border-b-1 rounded underline underline-offset-8">
                     Projects
                 </h2>
 
-                <div class="container items-center flex flex-col gap-4 md:flex-row py-6 p-5" id="Cards">
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                        <img class="w-full border-b-2" src="./img/blog_showcase.png" alt="blog project showcase">
-                        <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">Blog Website</div>
-                          <p class="text-gray-700 text-base pl-4">
-                            Code: <a href="https://github.com/khaled5321/Group_01_Django_Blog" class="underline">Link</a>
-                          </p>
+                <div class="container items-center justify-evenly flex flex-col gap-12 md:gap-6 md:flex-row py-6 p-5" id="Cards">
+
+                    <div class="max-w-sm w-[21rem] md:w-[24rem] rounded max-h-96 overflow-hidden shadow-lg bg-white">
+                        <img class="w-full h-72 border-b-2" src="./img/blog_showcase.png" alt="blog project showcase">
+
+                        <div class="px-6 pt-4 w-fit">
+                            <a href="https://github.com/khaled5321/Group_01_Django_Blog" class="hover:underline transition-all">
+                                <p class="font-bold text-xl mb-2">Blog Website</p>
+                            </a>
                         </div>
-                        <div class="px-6 pt-2 pb-2">
+
+                        <div class="px-6 pb-2">
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Django</span>
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Bootstrap</span>
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">SCSS</span>
                         </div>
                     </div>
 
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                        <img class="w-full border-b-2" src="./img/tic-tac-toe.png" alt="blog project showcase">
-                        <div class="px-6 py-4">
-                          <div class="font-bold text-xl mb-2">Multiplayer Tic-Tac-Toe</div>
-                          <p class="text-gray-700 text-base pl-4">
-                            Code: <a href="https://github.com/khaled5321/Tic-tac-toe" class="underline">Link</a>
-                          </p>
+                    <div class="max-w-sm w-[21rem] md:w-[24rem] rounded max-h-96 overflow-hidden shadow-lg bg-white">
+                        <img class="w-full h-72 border-b-2" src="./img/tic-tac-toe.png" alt="tic-tac-toe project showcase">
+                        <div class="px-6 py-2 pt-4 w-fit">
+                            <a href="https://github.com/khaled5321/Tic-tac-toe" class="hover:underline transition-all">
+                                <p class="font-bold text-xl mb-2">Tic-Tac-Toe</p>
+                            </a>
                         </div>
-                        <div class="px-6 pt-2 pb-2">
+                        <div class="px-6 pb-2">
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Firebase</span>
                           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="Contact Me" class="bg-gradient-to-r py-20 from-[#555555]  to-[#2a2a2a]">
+        <section id="ContactMe" class="bg-[#2a2a2a] py-20">
             <div class="container p-5 mx-auto flex flex-col items-center gap-3">
                 <h2 class="prose text-[#808080] opacity-80 border-b-2 border-opacity-100 rounded shadow-bot px-2 shadow-[white]">
                     Contact Me
@@ -112,8 +113,8 @@
 
     </main>
 
-    <footer class="bg-gradient-to-r p-5 from-[#2a2a2a] to-[#000]">
-        <div class="container mx-auto flex text-white flex-col gap-3 items-center md:flex-row md:justify-around">
+    <footer class="bg-black p-5">
+        <div class="container mx-auto flex text-white flex-col gap-3 items-center md:flex-row md:justify-between">
             <p>Copyright © 2022</p>
 
             <div class="fill-white flex justify-center items-center gap-1 md:justify-end md:max-w-md">
