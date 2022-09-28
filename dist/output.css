@@ -1551,6 +1551,11 @@ select {
   background-color: rgb(24 24 24 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#668F80\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 143 128 / var(--tw-bg-opacity));
+}
+
 .fill-black {
   fill: #000;
 }
