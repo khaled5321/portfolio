@@ -1414,52 +1414,8 @@ select {
   height: auto;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-44 {
-  height: 11rem;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
 .h-72 {
   height: 18rem;
-}
-
-.max-h-14 {
-  max-height: 3.5rem;
-}
-
-.max-h-fit {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-
-.max-h-min {
-  max-height: -webkit-min-content;
-  max-height: -moz-min-content;
-  max-height: min-content;
-}
-
-.max-h-72 {
-  max-height: 18rem;
-}
-
-.max-h-9 {
-  max-height: 2.25rem;
 }
 
 .max-h-96 {
@@ -1482,8 +1438,8 @@ select {
   width: 45%;
 }
 
-.w-\[30px\] {
-  width: 30px;
+.w-\[21rem\] {
+  width: 21rem;
 }
 
 .w-fit {
@@ -1492,32 +1448,16 @@ select {
   width: fit-content;
 }
 
-.w-\[24rem\] {
-  width: 24rem;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
-}
-
-.w-\[21rem\] {
-  width: 21rem;
+.w-\[30px\] {
+  width: 30px;
 }
 
 .max-w-sm {
   max-width: 24rem;
 }
 
-.max-w-xs {
-  max-width: 20rem;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-center {
@@ -1544,16 +1484,12 @@ select {
   gap: 0.75rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-1 {
   gap: 0.25rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .overflow-hidden {
@@ -1580,18 +1516,19 @@ select {
   border-bottom-width: 2px;
 }
 
-.border-opacity-100 {
-  --tw-border-opacity: 1;
+.bg-\[\#fafafa\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f2f2f2\] {
+.bg-\[\#9d9d9d\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+  background-color: rgb(157 157 157 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#aaaaaa\] {
+.bg-\[\#db6969\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(170 170 170 / var(--tw-bg-opacity));
+  background-color: rgb(219 105 105 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1604,42 +1541,14 @@ select {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#2a2a2a\] {
+.bg-\[\#555555\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(42 42 42 / var(--tw-bg-opacity));
+  background-color: rgb(85 85 85 / var(--tw-bg-opacity));
 }
 
-.bg-black {
+.bg-\[\#181818\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-\[\#555555\] {
-  --tw-gradient-from: #555555;
-  --tw-gradient-to: rgb(85 85 85 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#2a2a2a\] {
-  --tw-gradient-from: #2a2a2a;
-  --tw-gradient-to: rgb(42 42 42 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-\[\#2a2a2a\] {
-  --tw-gradient-to: #2a2a2a;
-}
-
-.to-\[\#000\] {
-  --tw-gradient-to: #000;
-}
-
-.to-\[\#\] {
-  --tw-gradient-to: #;
+  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
 }
 
 .fill-black {
@@ -1664,14 +1573,9 @@ select {
   padding-bottom: 5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-6 {
@@ -1684,11 +1588,6 @@ select {
   padding-right: 1.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1699,42 +1598,25 @@ select {
   padding-bottom: 0.25rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-0 {
   padding-bottom: 0px;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -1766,11 +1648,6 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-sm {
@@ -1815,19 +1692,9 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-\[\#808080\] {
-  --tw-text-opacity: 1;
-  color: rgb(128 128 128 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1835,41 +1702,14 @@ select {
           text-decoration-line: underline;
 }
 
-.underline-offset-1 {
-  text-underline-offset: 1px;
-}
-
-.underline-offset-2 {
-  text-underline-offset: 2px;
-}
-
-.underline-offset-4 {
-  text-underline-offset: 4px;
-}
-
 .underline-offset-8 {
   text-underline-offset: 8px;
-}
-
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.shadow-bot {
-  --tw-shadow: 0px 1px 0px 0px;
-  --tw-shadow-colored: 0px 1px 0px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-\[white\] {
-  --tw-shadow-color: white;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .transition-all {
@@ -1902,22 +1742,6 @@ select {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[30ch\] {
-    width: 30ch;
-  }
-
-  .sm\:w-\[29ch\] {
-    width: 29ch;
-  }
-
-  .sm\:w-\[28ch\] {
-    width: 28ch;
-  }
-
-  .sm\:w-\[27ch\] {
-    width: 27ch;
-  }
-
   .sm\:w-\[26ch\] {
     width: 26ch;
   }
@@ -1926,10 +1750,6 @@ select {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
-  }
-
-  .md\:w-\[30ch\] {
-    width: 30ch;
   }
 
   .md\:w-\[24rem\] {
@@ -1958,10 +1778,6 @@ select {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
   }
 
   .md\:gap-6 {

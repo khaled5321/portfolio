@@ -6,3 +6,7 @@
     font-family: 'herofont'; 
     src: url('../fonts/cursive.ttf');
 }
+
+@layer components{
+    
+}
