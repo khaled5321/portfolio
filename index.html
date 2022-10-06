@@ -9,27 +9,29 @@
 </head>
 <body class="overflow-x-hidden font-mono">
     <header class="bg-[#fafafa]">
-        <nav class="container flex p-5 pb-0 mx-auto items-center">
+        <nav class="navbar">
             <h1 class="prose font-cursive font-semibold text-[black]">khaled Emad</h1>
             <div class="mr-0 ml-auto">
-                <a id="contactme_link" href="#ContactMe" class="prose text-[#1d1d1d] mr-4">Contact Me</a>
-                <a id="projects_link" href="#Projects" class="prose text-[#1d1d1d]">Projects</a>
+                <a id="contactme_link" href="#ContactMe" class="prose text-[#490a0a] mr-4">Contact Me</a>
+                <a id="projects_link" href="#Projects" class="prose text-[#490a0a]">Projects</a>
             </div>
         </nav>
     </header>
     
     <main>
         <section id="hero" class="relative bg-[#fafafa]">
-            <div class="container  px-5 py-20 mx-auto flex flex-col md:flex-row items-center">
+            <div class="hero">
                 <div id="hero-info" class="flex flex-col justify-center items-center gap-10 md:items-start">
                     <h2 class="prose text-3xl text-[#2a2a2a]">Hi, My Name is</h2>
-                    <h1 class="prose text-5xl font-hero text-[#665687] font-semibold">Khaled Emad</h1>
+                    <h1 id="name" class="prose text-5xl font-hero text-[#665687] font-semibold">Khaled Emad</h1>
 
-                    <p class="prose text-center md:text-left text-[#2a2a2a] text-3xl w-[20ch] leading-[3rem] sm:w-[26ch] lg:w-[30ch]">
-                        I'm a Software Engineer and Web Developer
+                    <p class="text-center md:text-left text-[#2a2a2a] text-lg w-[40ch] px-10 leading-[2rem] sm:px-0 sm:w-[45ch] lg:w-[52ch]">
+                        <!-- I'm a Software Engineer and Web Developer -->
+                        I'm an entry-level web developer with experience in building full-stack web apps with
+                        Django and Vue.
                     </p>
 
-                    <p class="prose text-center md:text-left text-[#2a2a2a] text-3xl w-[20ch]">
+                    <p class="prose text-center md:text-left text-[#288261] text-3xl w-[20ch]">
                         Connect With Me:
                     </p>
 
@@ -60,16 +62,16 @@
                 <img src="./img/hero-img.png" alt="" class="hidden md:block absolute w-[45%] right-[-30px] mb-[60px] h-auto">
             </div>
         </section>
-        <!-- bg-[#9d9d9d] -->
+
         <section id='Projects' class=" bg-[#db6969]">
-            <div class="container py-14 mx-auto flex flex-col items-center gap-3">
+            <div class="section">
                 <h2 class="prose text-white text-3xl font-semibold border-b-1 rounded underline underline-offset-8">
                     Projects
                 </h2>
 
                 <div class="container items-center justify-evenly flex flex-col gap-12 md:gap-6 md:flex-row py-6 p-5" id="Cards">
 
-                    <div class="max-w-sm w-[21rem] md:w-[24rem] rounded max-h-96 overflow-hidden shadow-lg bg-white">
+                    <div class="card">
                         <img class="w-full h-72 border-b-2" src="./img/blog_showcase.png" alt="blog project showcase">
 
                         <div class="px-6 pt-4 w-fit">
@@ -85,7 +87,7 @@
                         </div>
                     </div>
 
-                    <div class="max-w-sm w-[21rem] md:w-[24rem] rounded max-h-96 overflow-hidden shadow-lg bg-white">
+                    <div class="card">
                         <img class="w-full h-72 border-b-2" src="./img/tic-tac-toe.png" alt="tic-tac-toe project showcase">
                         <div class="px-6 pt-4 w-fit">
                             <a href="https://github.com/khaled5321/Tic-tac-toe" class="hover:underline transition-all">
@@ -104,10 +106,20 @@
         </section>
 
         <section id="ContactMe" class="bg-[#668F80]">
-            <div class="container py-14 p-5 mx-auto flex flex-col items-center gap-3">
+            <div class="section">
                 <h2 class="prose text-white text-3xl font-semibold border-b-1 rounded underline underline-offset-8">
                     Contact Me
                 </h2>
+
+                <form class="container flex flex-col py-6 px-5 gap-10 md:px-52">
+                    <input type="text" placeholder="Your Name" id="name"  class="form-input rounded" required>
+                    <input type="email" placeholder="Your Email" id="email" class="form-input rounded" required>
+                    <input type="text" placeholder="Subject" id="subject" class="form-input rounded" required>
+                    <textarea id="msg" placeholder="Message" class="resize-none form-textarea"></textarea>
+                    <button type="submit" class="text-white font-bold bg-[#db6969] w-fit mx-auto py-3 rounded-md px-10">
+                        Send
+                    </button>
+                </form>
             </div>
         </section>
 

@@ -10,6 +10,9 @@ module.exports = {
         'cursive': ['cursive'],
         'hero': ['herofont', 'Proxima Nova']
       },
+      screens: {
+        'xs': '475px',
+      }
     },
   },
   plugins: [
