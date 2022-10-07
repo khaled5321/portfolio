@@ -24,4 +24,8 @@
         @apply max-w-sm w-[21rem] md:w-[24rem] rounded max-h-96 overflow-hidden shadow-lg bg-white;
     }
 
+    .label{
+        @apply block mb-2 text-base font-medium text-[#ffbc9d];
+    }
+
 }
